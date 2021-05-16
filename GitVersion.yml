@@ -1,0 +1,10 @@
+mode: Mainline
+major-version-bump-message: '\BREAKING CHANGE:\s?'
+minor-version-bump-message: '\feat:\s?'
+patch-version-bump-message: '\fix:\s?'
+commit-message-incrementing: Enabled
+branches:
+  master:
+    regex: ^latest$|^master$|^main$|^release$
+  pull-request:
+    tag: pr
